@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.0</TargetFramework>
+        <AssemblyName>CoreForecast</AssemblyName>
+        <OutputType>Exe</OutputType>
+        <OutputPath>..\..\build\CoreForecast\</OutputPath>
+        <PackageId>CoreForecast</PackageId>
+        <RuntimeIdentifiers>win10-x64;ubuntu.14.04-x64</RuntimeIdentifiers>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="2.2.1" />
+        <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.11" />
+        <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+        <PackageReference Include="Google.Protobuf.Tools " Version="3.5.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="ClassFiles\Reg\" />
+    </ItemGroup>
+    
+</Project>
